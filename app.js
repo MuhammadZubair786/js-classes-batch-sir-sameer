@@ -46,7 +46,7 @@
 // sum(b) //25
 
 // sum(0,0) //1
- //arr
+//arr
 
 
 //  var date = new Date()
@@ -108,11 +108,155 @@
 
 // FullName(f_name,l_name)
 
-function Square(n){
-    return n*n
+
+// function Square(n){
+//     return n*n
+// }
+
+// var res = Square(5)
+// console.log(res)
+
+
+
+// function Define
+// function userWelcome(){
+//     alert('Welcome app')
+// }
+
+// function Submit(){
+//     let name = document.getElementById("name")
+//     let nameText= document.getElementById("nameText")
+
+//     let email = document.getElementById("email")
+//     let emailText2 = document.getElementById("emailText")
+
+//     if(name.value.length==0){
+//         console.log(nameText)
+//         nameText.style.display="inline"
+//         name.classList="redborder"
+
+//         // alert("plz enter name")
+//     }
+//     else{
+//         nameText.style.display="none"
+//         name.classList=""
+//     }
+//     if(email.value.length==0){
+//         console.log(email.classList)
+//         email.classList="redborder"
+//         emailText2.style.display="inline"
+//     }
+//     else{
+//         email.classList=""
+//         emailText2.style.display="none"
+//     }
+
+//     if(name.value.length!=0 && email.value.length!=0 ){
+//         alert("submit your data")
+//     }
+
+
+
+
+//     console.log(name.value,email.value)
+
+// }
+
+
+function SubmitData() {
+
+    let btn = document.getElementById("btn")
+    let gif = document.getElementById("gif")
+
+    let name = document.getElementById("name") //input
+    let nameText = document.getElementById("nametext") //error text
+
+
+    let email = document.getElementById("email")
+    let emailText = document.getElementById("emailtext")
+
+    let password = document.getElementById("password")
+    let passwordText = document.getElementById("passwordtext")
+
+    // if (name.value.length == 0) {
+    //     name.classList = "redborder"
+    //     nameText.style.display="block"
+    // }
+    // else {
+    //     name.classList = "blackborder"
+    //     nameText.style.display="none"
+    // }
+    // if (email.value.length == 0) {
+    //     email.classList = "redborder"
+    //     emailText.style.display="block"
+    // }
+    // else {
+    //     email.classList = "blackborder"
+    //     emailText.style.display="none"
+    // }
+    // if (password.value.length == 0) {
+    //     password.classList = "redborder"
+    //     passwordText.style.display="block"
+    // }
+    // else {
+    //     password.classList = "blackborder"
+    //     passwordText.style.display="none"
+    // }
+
+    if (name.value.length == 0) {
+        name.classList = "redborder"
+        nameText.style.display = "block"
+    }
+    // else {
+    //     name.classList = "blackborder"
+    //     nameText.style.display="none"
+    // }
+    else if (email.value.length == 0) {
+        name.classList = "blackborder"
+        nameText.style.display = "none"
+        email.classList = "redborder"
+        emailText.style.display = "block"
+    }
+    // else {
+    //     email.classList = "blackborder"
+    //     emailText.style.display="none"
+    // }
+    else if (password.value.length == 0) {
+        email.classList = "blackborder"
+        emailText.style.display = "none"
+        password.classList = "redborder"
+        passwordText.style.display = "block"
+    }
+    // else {
+    //     password.classList = "blackborder"
+    //     passwordText.style.display="none"
+    // }
+    if (email.value.length != 0 && name.value.length != 0 && password.value.length != 0) {
+        
+        name.classList = "blackborder"
+        nameText.style.display = "none"
+        email.classList = "blackborder"
+        emailText.style.display = "none"
+        password.classList = "blackborder"
+        passwordText.style.display = "none"
+        btn.style.display = "none"
+        gif.style.display = "inline"
+        
+        setTimeout(() => {
+            gif.style.display = "none"
+            btn.style.display="inline"
+            name.value=""
+            email.value=""
+            password.value=""  
+            name.classList="firstBorder"      
+            email.classList="firstBorder"      
+            name.classList="firstBorder"      
+
+
+            alert("Submit Your Data")
+        }, 5000)
+
+    }
+
+
 }
-
-var res = Square(5)
-console.log(res)
-
-
