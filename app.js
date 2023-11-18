@@ -162,6 +162,101 @@
 
 // }
 
+let zipcode = document.getElementById("zipcode")
+let city = document.getElementById("city")
+
+// zipcode.addEventListener("change",()=>{
+//     console.log(zipcode.value)
+
+
+// })
+
+function getCity() {
+    var cityName;
+    var zipEntered = document.getElementById("zipcode").value;
+    switch (zipEntered) {
+        case "71000":
+            cityName = "HYDERABAD";
+            break;
+        case "75300":
+            cityName = "KARACHI";
+            break;
+        case "53770":
+            cityName = "LAHORE";
+    }
+    if (cityName == undefined) {
+        cityName = ""
+    }
+    document.getElementById("city").value = cityName;
+}
+
+// var apiData = `
+
+// Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam similique voluptatem dolores enim reiciendis dignissimos nostrum deleniti, obcaecati aliquam harum atque necessitatibus fugit inventore adipisci nihil, quo dolore quae incidunt?
+// Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam similique voluptatem dolores enim reiciendis dignissimos nostrum deleniti, obcaecati aliquam harum atque necessitatibus fugit inventore adipisci nihil, quo dolore quae incidunt?
+// Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam similique voluptatem dolores enim reiciendis dignissimos nostrum deleniti, obcaecati aliquam harum atque necessitatibus fugit inventore adipisci nihil, quo dolore quae incidunt?
+// Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam similique voluptatem dolores enim reiciendis dignissimos nostrum deleniti, obcaecati aliquam harum atque necessitatibus fugit inventore adipisci nihil, quo dolore quae incidunt?
+// `
+// // function SHOWtXT(check) {
+//     console.log(check)
+
+//     var paraid = document.getElementById("paraid")
+//     console.log(paraid.innerText.length)
+//     console.log(paraid.innerText.length)
+//     if (apiData.length < 300) {
+//         paraid.innerHTML = apiData
+
+//     }
+//     if (apiData.length > 300 && paraid.innerText.length == 0) {
+//         paraid.innerHTML = apiData.substring(0, 300)
+//         if (apiData.length > 600) {
+//             paraid.innerHTML += "<button onclick=SHOWtXT(false)>Read More</button>"
+
+
+//         }
+
+//     }
+
+//     else if (apiData.length > 300 && paraid.innerText.length > 0 && paraid.innerText.length <= 308) {
+//         paraid.innerHTML = apiData.substring(0, 600)
+//         if (apiData.length > 900) {
+//             paraid.innerHTML += "<button onclick=SHOWtXT(false)>Read More</button>"
+
+
+//         }
+//     }
+//     else if (apiData.length > 600 && paraid.innerText.length > 300 && paraid.innerText.length <= 608) {
+//         paraid.innerHTML = apiData.substring(0, 900)
+//         if (apiData.length > 1200) {
+//             paraid.innerHTML += "<button onclick=SHOWtXT(false)>Read More</button>"
+
+
+//         }
+//     }
+//     else if (apiData.length > 900 && paraid.innerText.length > 600 && paraid.innerText.length <= 908) {
+//         paraid.innerHTML = apiData.substring(0, 1200) + "<button onclick=SHOWtXT(false)>Read More</button>"
+//     }
+//     else if (apiData.length > 1200 && paraid.innerText.length > 900 && paraid.innerText.length <= 1208) {
+//         paraid.innerHTML = apiData.substring(0, 1500) + "<button onclick=SHOWtXT(false)>Read More</button>"
+//     }
+
+
+
+
+
+    // else{
+    //     document.getElementById("paraid").innerText =apiData
+    // }
+
+// }
+
+// function showFulltext() {
+//     document.getElementById("hide").style.display = "inline"
+//     document.getElementById("read").style.display = "none"
+
+
+// }
+
 
 function SubmitData() {
 
@@ -232,7 +327,7 @@ function SubmitData() {
     //     passwordText.style.display="none"
     // }
     if (email.value.length != 0 && name.value.length != 0 && password.value.length != 0) {
-        
+
         name.classList = "blackborder"
         nameText.style.display = "none"
         email.classList = "blackborder"
@@ -241,16 +336,16 @@ function SubmitData() {
         passwordText.style.display = "none"
         btn.style.display = "none"
         gif.style.display = "inline"
-        
+
         setTimeout(() => {
             gif.style.display = "none"
-            btn.style.display="inline"
-            name.value=""
-            email.value=""
-            password.value=""  
-            name.classList="firstBorder"      
-            email.classList="firstBorder"      
-            name.classList="firstBorder"      
+            btn.style.display = "inline"
+            name.value = ""
+            email.value = ""
+            password.value = ""
+            name.classList = "firstBorder"
+            email.classList = "firstBorder"
+            name.classList = "firstBorder"
 
 
             alert("Submit Your Data")
