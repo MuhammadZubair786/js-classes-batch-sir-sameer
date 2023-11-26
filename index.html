@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            text-align: right;
+            width: 95%;
+        }
+        table {
+            width: 200px;
+        }
+        tr{
+            background-color: rgb(149, 152, 152);
+            width: 100%;
+        }
+        button{
+            background-color: aqua;
+            width: 100%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- <div id="test">
+        <ul>
+            <li>Test</li>
+            <li></li>
+            <li>testing </li>
+            <li>Test</li>
+            <li></li>
+            <li>testing </li>
+        </ul>
+
+    </div> -->
+    <div style="width: 50%;margin: auto;">
+     
+        <br />
+        <table>
+            <tr>
+                <td colspan="4">
+                    <input type="text" id="inputtext"/>
+                </td>
+            </tr>
+            <tr>
+                <td onclick="SquareRoot()" colspan="2">
+                    <button>√</button>
+                </td>
+                <td onclick="Square()" colspan="2">
+                    <button>^2</button>
+                </td>
+            </tr>
+            <tr>
+                <td onclick="SetData('+')">
+                    <button>+</button>
+                </td>
+                <td onclick="SetData('-')">
+                    <button>-</button>
+                </td>
+                <td onclick="SetData('*')">
+                    <button>*</button>
+                </td>
+                <td onclick="SetData('/')">
+                    <button>/</button>
+                </td>
+            </tr>
+            <tr>
+                <td onclick="SetData(7)">
+                    <button>7</button>
+                </td>
+                <td onclick="SetData(8)">
+                    <button>8</button>
+                </td>
+                <td onclick="SetData(9)">
+                    <button>9</button>
+                </td>
+                <td onclick="Calculate()" rowspan="4" style="height: 100%;justify-content: center;color: aliceblue;text-align: center;background-color: blue;">
+                    <h1 style="width: 100%;">=</h1>
+                </td>
+            </tr>
+            <tr>
+                <td onclick="SetData(4)">
+                    <button>4</button>
+                </td>
+                <td onclick="SetData(5)">
+                    <button>5</button>
+                </td>
+                <td onclick="SetData(6)">
+                    <button>6</button>
+                </td>
+               
+            </tr>
+            <tr>
+                <td onclick="SetData(1)">
+                    <button>1</button>
+                </td>
+                <td onclick="SetData(2)">
+                    <button>2</button>
+                </td>
+                <td onclick="SetData(3)">
+                    <button>3</button>
+                </td>
+              
+            </tr>
+            <tr>
+                <td onclick="SetData(0)">
+                    <button>0</button>
+                </td>
+                <td onclick="SetData('.')" >
+                    <button>.</button>
+                </td>
+                <td onclick="clearFunc()">
+                    <button>C</button>
+                </td>
+                
+            </tr>
+        </table>
+
+       
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
