@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* td{
+            text-decoration: line-through;
+        } */
+        table{
+            width: 400px;
+            border: 1px solid grey;
+            border-collapse:collapse;
+            height: 300px;
+            text-align: center;
+        }
+        tr{
+            
+        }
+        td{
+            width: 130px !important;
+            border: 1px solid grey;
+            height: 95px;
+            font-size: 30px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <!-- <div>
+        hello div
+        <p>Hello user</p>
+    </div> -->
+    <diV id="userinput">
+        <input type="text" placeholder="Enter First User"  id="firstUser"/>
+        <input type="text" placeholder="Enter Second User" id="secondUser" />
+    
+        <button onclick="StartGame()">Start Game</button>
+    </diV>
+
+    <br/>
+
+    
+
+
+    <table id="game" style="display: none;">
+        <tr>
+            <td onclick="Check(this)"></td>
+            <td onclick="Check(this)"></td>
+            <td onclick="Check(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="Check(this)"></td>
+            <td onclick="Check(this)"></td>
+            <td onclick="Check(this)"></td>
+        </tr>
+        <tr>
+            <td onclick="Check(this)"></td>
+            <td onclick="Check(this)"></td>
+            <td onclick="Check(this)"></td>
+        </tr>
+    </table>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
