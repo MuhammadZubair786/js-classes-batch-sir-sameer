@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <!-- <form onsubmit="createAccount(this)"> -->
+        <input type="email" placeholder="Enter Email" required id="email">
+        <input type="password" placeholder="Enter Password" required id="password">
+        <br>
+        <input id="btn" type="submit" value="Create Account" onclick="createAccount(this)" />
+        <img  src="https://i.gifer.com/origin/34/34338d26023e5515f6cc8969aa027bca.gif" style="width: 90px;height: 90px;display: none;" id="loading" />
+        <!-- </form> -->
+
+
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+    <script>
+        const firebaseConfig = {
+            apiKey: "AIzaSyAuGF20T8DpKWvdY0k349pfCu9al7Gipwc",
+            authDomain: "class-auth-e51fc.firebaseapp.com",
+            projectId: "class-auth-e51fc",
+            storageBucket: "class-auth-e51fc.appspot.com",
+            messagingSenderId: "816141228815",
+            appId: "1:816141228815:web:9312add55a8d9a153f3c7a"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
